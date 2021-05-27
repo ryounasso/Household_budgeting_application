@@ -1,0 +1,95 @@
+[debug] [2021-05-26T10:05:09.401Z] ----------------------------------------------------------------------
+[debug] [2021-05-26T10:05:09.403Z] Command:       /Users/wabuchiryota/.anyenv/envs/nodenv/versions/15.12.0/bin/node /Users/wabuchiryota/.npm/_npx/47141/bin/firebase deploy --only hosting --project household-account-book-4e02c --debug
+[debug] [2021-05-26T10:05:09.403Z] CLI Version:   9.11.0
+[debug] [2021-05-26T10:05:09.403Z] Platform:      darwin
+[debug] [2021-05-26T10:05:09.403Z] Node Version:  v15.12.0
+[debug] [2021-05-26T10:05:09.404Z] Time:          Wed May 26 2021 19:05:09 GMT+0900 (日本標準時)
+[debug] [2021-05-26T10:05:09.404Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-26T10:05:09.409Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-26T10:05:09.410Z] > authorizing via signed-in user (ryounaoyuki@gmail.com)
+[debug] [2021-05-26T10:05:09.410Z] [iam] checking project household-account-book-4e02c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-26T10:05:09.412Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-26T10:05:09.412Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-26T10:05:09.535Z] <<< HTTP RESPONSE 200 {"date":"Wed, 26 May 2021 10:05:09 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:09.563Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/household-account-book-4e02c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-26T10:05:10.289Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 26 May 2021 10:05:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=634","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:10.291Z] > refreshing access token with scopes: []
+[debug] [2021-05-26T10:05:10.291Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-26T10:05:10.468Z] <<< HTTP RESPONSE 200 {"date":"Wed, 26 May 2021 10:05:10 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:10.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/household-account-book-4e02c [none]
+[debug] [2021-05-26T10:05:10.921Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/household-account-book-4e02c 200
+[debug] [2021-05-26T10:05:10.922Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/household-account-book-4e02c {"projectId":"household-account-book-4e02c","projectNumber":"950148737248","displayName":"Household-account-book","name":"projects/household-account-book-4e02c","resources":{"hostingSite":"household-account-book-4e02c","storageBucket":"household-account-book-4e02c.appspot.com","locationId":"asia-northeast1"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'household-account-book-4e02c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-26T10:05:11.818Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-26T10:05:11.818Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-26T10:05:11.982Z] <<< HTTP RESPONSE 200 {"date":"Wed, 26 May 2021 10:05:11 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:12.010Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-26T10:05:13.267Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 26 May 2021 10:05:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[household-account-book-4e02c]: beginning deploy... 
+[info] i  hosting[household-account-book-4e02c]: found 18 files in build 
+[debug] [2021-05-26T10:05:13.345Z] > refreshing access token with scopes: []
+[debug] [2021-05-26T10:05:13.345Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-26T10:05:13.347Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-05-26T10:05:13.347Z] [hosting][hash queue][FINAL] {"max":63,"min":7,"avg":11,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":68}
+[debug] [2021-05-26T10:05:13.512Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 26 May 2021 10:05:13 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:13.539Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions/5b6c2770e16ea569:populateFiles [none]
+[debug] [2021-05-26T10:05:13.539Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions/5b6c2770e16ea569:populateFiles {"files":{"/asset-manifest.json":"a31469c73f3e31b1fd58b14b723fc0b1db611218603e2e45a0790161bf0ccee8","/index.html":"912cae9d645da87ae57b1c2147e30c30deb441428d3254da3fd2799ef1cac41d","/manifest.json":"341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","/favicon.ico":"b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/logo192.png":"caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293","/static/css/main.6dea0f05.chunk.css":"dacbfbddb866b717cd31bd1c353e8c52f55e801e575dac21f02605217ab9f30f","/static/js/2.535f3250.chunk.js.LICENSE.txt":"65c6ecb6192f97a7b3e674b68ee6129941ddc83db480b46ce95eaea24ff40121","/static/css/main.6dea0f05.chunk.css.map":"ea654bda1e9cc756dcee1bbd2a4c3dd70c089fdd50680543b7bbe9dc5d9743d3","/static/js/3.561d6c16.chunk.js":"71a38f556a9f75ff4743d0d9c1c50238d21152f475c938b799a7542809207e1e","/logo512.png":"191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e","/static/js/main.c6efd68b.chunk.js.map":"de4957059025cede812a0fd4264b570a5be46ff801c2b0194e7df9c32d7b1619","/static/js/main.c6efd68b.chunk.js":"a19e2c791eef48013d17d2d1d816fa9b89f125f0178062d4940c06c3a5f6ce0f","/static/js/runtime-main.22440395.js":"2866ae2af110d5e070072190fead3d4055eecae210d916d07d186688626ff8e5","/static/js/3.561d6c16.chunk.js.map":"7269efa138d059de5a2e267ffe9dc9dd459b27b161bf165a96144a62c0626aab","/static/js/runtime-main.22440395.js.map":"63aa46fff81b09f82d2589a0413ad3d5988e52368229461a5651405e26371405","/static/js/2.535f3250.chunk.js":"6b3bef7369a3576a727866736b5965ecc0414aa7fa7716509aca3a2f0083bbbb","/static/js/2.535f3250.chunk.js.map":"2e0d88a9f8425f6e73a004791cf60331eff6d8be24802df1320f909c4a18607f"}}
+[debug] [2021-05-26T10:05:14.654Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions/5b6c2770e16ea569:populateFiles 200
+[debug] [2021-05-26T10:05:14.654Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions/5b6c2770e16ea569:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/household-account-book-4e02c/versions/5b6c2770e16ea569/files"}
+[debug] [2021-05-26T10:05:14.655Z] [hosting][populate queue][FINAL] {"max":1310,"min":1310,"avg":1310,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1310}
+[debug] [2021-05-26T10:05:14.655Z] [hosting] uploads queued: 0
+[debug] [2021-05-26T10:05:14.655Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1622023514655}
+[info] ✔  hosting[household-account-book-4e02c]: file upload complete 
+[debug] [2021-05-26T10:05:14.656Z] [hosting] deploy completed after 1387ms
+[debug] [2021-05-26T10:05:14.657Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "household-account-book-4e02c"
+    },
+    "site": "household-account-book-4e02c",
+    "version": "sites/household-account-book-4e02c/versions/5b6c2770e16ea569"
+  }
+]
+[info] i  hosting[household-account-book-4e02c]: finalizing version... 
+[debug] [2021-05-26T10:05:14.658Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-26T10:05:14.658Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-26T10:05:14.824Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 26 May 2021 10:05:14 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:14.854Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/versions/5b6c2770e16ea569?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-05-26T10:05:15.838Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 26 May 2021 10:05:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:15.840Z] [hosting] finalized version for household-account-book-4e02c: {"name":"sites/household-account-book-4e02c/versions/5b6c2770e16ea569","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-05-26T10:05:12.850235Z","createUser":{"email":"ryounaoyuki@gmail.com"},"finalizeTime":"2021-05-26T10:05:15.760455Z","finalizeUser":{"email":"ryounaoyuki@gmail.com"}}
+[info] ✔  hosting[household-account-book-4e02c]: version finalized 
+[info] i  hosting[household-account-book-4e02c]: releasing new version... 
+[debug] [2021-05-26T10:05:15.841Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/household-account-book-4e02c/releases?version_name=sites/household-account-book-4e02c/versions/5b6c2770e16ea569  
+ {"message":null}
+[debug] [2021-05-26T10:05:16.822Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 26 May 2021 10:05:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-26T10:05:16.823Z] [hosting] release: {"name":"sites/household-account-book-4e02c/releases/1622023516203818","version":{"name":"sites/household-account-book-4e02c/versions/5b6c2770e16ea569","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-05-26T10:05:12.850235Z","createUser":{"email":"ryounaoyuki@gmail.com"},"finalizeTime":"2021-05-26T10:05:15.760455Z","finalizeUser":{"email":"ryounaoyuki@gmail.com"}},"type":"DEPLOY","releaseTime":"2021-05-26T10:05:16.203818231Z","releaseUser":{"email":"ryounaoyuki@gmail.com"}}
+[info] ✔  hosting[household-account-book-4e02c]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/household-account-book-4e02c/overview
+[info] Hosting URL: https://household-account-book-4e02c.web.app
