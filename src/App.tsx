@@ -1,7 +1,12 @@
 import React from "react";
+import { AuthContext } from "./auth/AuthContext";
 
 const App = () => {
-  return <div>家計簿を作ります</div>;
+  return (
+    <AuthContext>
+      <div>家計簿を作ります</div>
+    </AuthContext>
+  );
 };
 
 export default App;
