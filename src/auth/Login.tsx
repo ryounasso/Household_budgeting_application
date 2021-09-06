@@ -16,14 +16,12 @@ export const Login = () => {
   };
 
   useEffect(() => {
-    currentUser && console.log("/");
+    currentUser && history.push("/");
   }, [currentUser]);
 
   const login = async (email: string, password: string, history: any) => {
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      console.log("実行されました");
-      //   auth.onAuthStateChanged((user) => setCurrentUser(user));
       history.push("/");
     } catch (error) {
       alert(error);

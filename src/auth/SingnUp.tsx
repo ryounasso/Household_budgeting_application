@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { Box, Button, VStack, Heading } from "@chakra-ui/react";
+import { Button, VStack, Heading } from "@chakra-ui/react";
 import { AuthContext } from "./AuthProvider";
 import { auth } from "../firebase/Firebase";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ export const SignUp = () => {
   const history = useHistory();
 
   useEffect(() => {
-    currentUser && console.log("/");
+    currentUser && history.push("/");
   }, [currentUser]);
 
   const handleSubmit = (event: any) => {
@@ -22,7 +22,6 @@ export const SignUp = () => {
   const signup = async (email: string, password: string, history: any) => {
     try {
       await auth.createUserWithEmailAndPassword(email, password);
-      //   auth.onAuthStateChanged((user) => setCurrentUser(user));
       history.push("/");
     } catch (error) {
       alert(error);
