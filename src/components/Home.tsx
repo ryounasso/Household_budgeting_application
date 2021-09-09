@@ -3,6 +3,7 @@ import { Box, Center, VStack } from "@chakra-ui/react";
 import { Header } from "./Header";
 import { Balance } from "./Balance";
 import { AddItem } from "./AddItem";
+import { MoneyList } from "./MoneyList";
 
 export const Home = () => {
   const [date, setDate] = useState(new Date());
@@ -31,6 +32,7 @@ export const Home = () => {
         />
         <Balance />
         <AddItem />
+        <MoneyList />
       </VStack>
     </Center>
   );
